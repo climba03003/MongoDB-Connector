@@ -20,7 +20,7 @@ export class Connector extends EventEmitter {
   // useNewUrlParser and useUnifiedTopology is default true
   private __opt: MongoClientOptions = Connector.__defaultOpts;
 
-  private client?: MongoClient;
+  public client?: MongoClient;
   public db?: Db;
 
   constructor(cs: string, opt: MongoClientOptions) {
